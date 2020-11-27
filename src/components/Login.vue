@@ -80,7 +80,7 @@ export default {
     login() {
       this.$refs.loginFormRef.validate(async (valid) => {
         if (!valid) return
-        // console.log(this);
+        console.log(this);
         const { data: res } = await this.$http.post('login', this.loginForm)
         // console.log(res) res是axios返回的对象里的data对象，加了await以后不再是promise对象了
         if (res.meta.status !== 200) {
@@ -92,7 +92,7 @@ export default {
           this.$message.success('登录成功！')
           //console.log(res)
           window.sessionStorage.setItem('token', res.data.token)
-          // 2. 通过编程式导航跳转到后台主页，路由地址为/home
+          // 2. 通过编程式导航进行路由跳转到后台主页，路由地址为/home
           //console.log(this)
           this.$router.push('/home')
         }
