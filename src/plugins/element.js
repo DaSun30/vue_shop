@@ -22,7 +22,11 @@ Switch,
 Tooltip,
 Pagination,
 Dialog,
-MessageBox } from 'element-ui'// {} 按需导入
+MessageBox,
+Tag,
+Tree,
+Select,
+Option } from 'element-ui'// {} 按需导入
 
 Vue.use(Button)
 Vue.use(Form)
@@ -46,6 +50,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 // Message组件需要全局挂载，这样其他组件通过this.$message自定义属性可以使用Message组件了
 Vue.prototype.$message = Message
 // MessageBox组件需要全局挂载（到Vue实例的prototype中去）,这样其他组件通过this.$confirm自定义属性可以使用MessageBox组件了
