@@ -98,7 +98,7 @@ export default {
       if(res.meta.status !== 200)   return this.$message.error(res.meta.msg);
       // data是Array，可直接给menulist这个array赋值
       this.menulist = res.data;
-      console.log(res);
+      // console.log(res);
     },
     // 点击按钮，切换菜单折叠与展开
     toggleCollapse() {

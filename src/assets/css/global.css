@@ -23,3 +23,8 @@ html, body, #app {
 .el-pagination {
     margin-top: 15px;
 }
+
+/* cascader高度，使其有滚动条 */
+.el-cascader-panel{
+    height: 200px;
+}
