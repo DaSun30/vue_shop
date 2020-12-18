@@ -25,6 +25,21 @@ html, body, #app {
 }
 
 /* cascader高度，使其有滚动条 */
-.el-cascader-panel{
+.el-cascader-panel {
     height: 200px;
+}
+
+/* 步骤条margin */
+.el-steps {
+    margin: 15px 0;
+}
+
+/* 步骤条文字大小 */
+.el-step__title {
+    font-size: 13px;
+}
+
+/* 富文本编辑器最小高度 */
+.ql-editor {
+    min-height: 300px;
 }

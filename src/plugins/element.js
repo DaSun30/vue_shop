@@ -30,7 +30,12 @@ Option,
 Cascader,
 Alert,
 Tabs,
-TabPane } from 'element-ui'// {} 按需导入
+TabPane,
+Steps,
+Step,
+Checkbox,
+CheckboxGroup,
+Upload } from 'element-ui'// {} 按需导入
 
 Vue.use(Button)
 Vue.use(Form)
@@ -62,6 +67,12 @@ Vue.use(Cascader)
 Vue.use(Alert)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Upload)
+
 // Message组件需要全局挂载，这样其他组件通过this.$message自定义属性可以使用Message组件了
 Vue.prototype.$message = Message
 // MessageBox组件需要全局挂载（到Vue实例的prototype中去）,这样其他组件通过this.$confirm自定义属性可以使用MessageBox组件了
