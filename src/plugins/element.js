@@ -35,7 +35,9 @@ Steps,
 Step,
 Checkbox,
 CheckboxGroup,
-Upload } from 'element-ui'// {} 按需导入
+Upload,
+Timeline,
+TimelineItem } from 'element-ui'// {} 按需导入
 
 Vue.use(Button)
 Vue.use(Form)
@@ -72,6 +74,8 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 // Message组件需要全局挂载，这样其他组件通过this.$message自定义属性可以使用Message组件了
 Vue.prototype.$message = Message
